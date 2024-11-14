@@ -17,7 +17,7 @@ body {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -33,9 +33,22 @@ body {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.instagram-embeds {
+  margin: 30px 0;
+}
+
 .card {
   background: white;
   margin: 30px 0;
+}
+
+.card-header.grid {
+  grid-gap: 0;
 }
 
 .card-body {
@@ -47,19 +60,17 @@ body {
 }
 
 .btn {
-  .btn {
-    display: block;
-    color: white;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: center;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    padding: 16px;
-    background-color: #462cb3;
-    text-decoration: none;
-  }
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #150f35;
+  text-decoration: none;
 }
 
 section {
@@ -196,6 +207,10 @@ footer a {
   opacity: 0.7;
 }
 
+.signature {
+  text-align: center;
+}
+
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
@@ -220,5 +235,13 @@ footer a {
 
   section {
     padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
